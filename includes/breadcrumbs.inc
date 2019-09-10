@@ -50,7 +50,7 @@ function islandora_solr_get_breadcrumbs_recursive($pid, array &$context = NULL) 
     $context['root'] = $root;
   }
   if ($pid == $context['root']) {
-    $title = 'Islandora Repository';
+    $title = 'Archive';
     $mlid = db_select('menu_links', 'ml')
       ->condition('ml.link_path', 'islandora')
       ->fields('ml', array('mlid'))
